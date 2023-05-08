@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -26,8 +27,18 @@ public class Main {
 
     public static void task2() {
         System.out.println("Задача 2");
-        // Пишем код для задачи 2
-
+        List<Integer> nums = new ArrayList<>(List.of(1, 8, 2, 3, 4, 4, 5, 5, 6, 7));
+        List<Integer> sortedList = new ArrayList<>();
+        for (Integer num : nums) {
+            if (num % 2 == 0) {
+                if (!sortedList.contains(num)) {
+                    sortedList.add(num);
+                }
+            }
+        }
+        Collections.sort(sortedList);
+        System.out.println(sortedList);
+        System.out.println();
     }
 
     public static void task3() {
