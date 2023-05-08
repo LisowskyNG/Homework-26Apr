@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,6 +22,7 @@ public class Main {
         }
         System.out.println();
     }
+//______________________________________________________________________________________________________________________
 
     public static void task2() {
         System.out.println("Задача 2");
@@ -40,16 +39,20 @@ public class Main {
         System.out.println(sortedList);
         System.out.println();
     }
+//______________________________________________________________________________________________________________________
 
     public static void task3() {
         System.out.println("Задача 3");
-        // Пишем код для задачи 3
-
+        List<String> text = new ArrayList<>(Arrays.asList("Наташа", "Виктор", "Андрей", "Наташа", "Сергей", "Катя",
+                 "Елена", "Андрей", "Татьяна", "Сергей"));
+        Set<String> newText = new HashSet<>(text);
+        System.out.println(newText);
+        System.out.println();
     }
-
+//______________________________________________________________________________________________________________________
     public static void task4() {
         System.out.println("Задача 4");
-        // Пишем код для задачи 4
+
 
     }
 
