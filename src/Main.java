@@ -6,10 +6,6 @@ public class Main {
         task2();
         task3();
         task4();
-        task5();
-        task6();
-        task7();
-        task8();
 
     }
     public static void task1() {
@@ -52,30 +48,18 @@ public class Main {
 //______________________________________________________________________________________________________________________
     public static void task4() {
         System.out.println("Задача 4");
-
-
-    }
-
-    public static void task5 () {
-        System.out.println("Задача 5");
-        // Пишем код для задачи 5
-
-    }
-
-    public static void task6() {
-        System.out.println("Задача 6");
-        // Пишем код для задачи 6
-
-    }
-
-    public static void task7() {
-        System.out.println("Задача 7");
-        // Пишем код для задачи 7
-
-    }
-    public static void task8 () {
-        System.out.println("Задача 8");
-        // Пишем код для задачи 8
+        List<String> strings = new ArrayList<>(List.of("один", "два", "два", "три", "три", "три"));
+        HashMap<String, Integer> stringToCount = new HashMap<>();
+        for (String string : strings) {
+            if (!stringToCount.containsKey(string)) {
+                stringToCount.put(string, 0);
+            }
+            stringToCount.put(string, stringToCount.get(string) + 1);
+        }
+        for (String string : stringToCount.keySet())
+        {
+            System.out.println(string + " содержится " + stringToCount.get(string) + " раз(а)");
+        }
 
     }
 
